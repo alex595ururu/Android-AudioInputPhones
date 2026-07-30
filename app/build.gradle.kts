@@ -15,6 +15,7 @@ android {
     defaultConfig {
         applicationId = "com.androidActivity"
         minSdk = 24
+        targetSdk = 34
     }
 
     buildTypes {
