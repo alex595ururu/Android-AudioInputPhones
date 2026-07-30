@@ -1,5 +1,6 @@
 package com.androidActivity
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -42,6 +43,7 @@ class MainKotlin : Activity() {
         buildUI()
     }
 
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     override fun onResume() {
         super.onResume()
         val filter = IntentFilter(ScoService.ACTION_SCO_STATUS)
